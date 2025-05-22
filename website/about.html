@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Vanshi 💖</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins&display=swap" rel="stylesheet">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background-color: #fff0f6;
+      font-family: 'Poppins', sans-serif;
+      overflow-x: hidden;
+    }
+
+    #tsparticles {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+
+    .container {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-family: 'Pacifico', cursive;
+      color: #d81b60;
+      font-size: 48px;
+      margin-bottom: 20px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .animated-photo {
+      width: 220px;
+      border-radius: 25px;
+      box-shadow: 0 0 20px #f48fb1;
+      margin-bottom: 30px;
+      transition: transform 0.3s;
+    }
+
+    .animated-photo:hover {
+      transform: scale(1.05);
+    }
+
+    .slide-in {
+      margin: 20px auto;
+      max-width: 700px;
+      font-size: 20px;
+      line-height: 1.7;
+      color: #4a148c;
+      background: #ffe6f0;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px #f8bbd0;
+      animation: slideUp 1s ease;
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(40px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    .btns {
+      margin-top: 40px;
+    }
+
+    .btns a {
+      margin: 10px;
+      padding: 12px 24px;
+      background: #f06292;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      border-radius: 30px;
+      transition: background 0.3s ease;
+    }
+
+    .btns a:hover {
+      background: #ec407a;
+    }
+  </style>
+</head>
+<body>
+  <div id="tsparticles"></div>
+
+  <div class="container">
+    <h1>About Vanshi 🌸</h1>
+    <img src="images/vanshi.jpg" alt="Vanshi" class="animated-photo">
+
+    <p class="slide-in">
+      ✨ Vanshi – ek aisi dost jo smile kare to duniya roshan ho jaye.  
+      Har baat mein positivity, har moment mein masti! 😄  
+      Intelligent bhi, caring bhi, aur thodi si pagal bhi 😜 (lekin best wali pagal).
+    </p>
+
+    <p class="slide-in">
+      ☀️ Jab bhi udaasi aati hai, Vanshi ek sunshine ki tarah sab kuch theek kar deti hai.  
+      Life mein itni achhi dost milna kisi blessing se kam nahi hai. 💫
+    </p>
+
+    <p class="slide-in">
+      💖 Vanshi = vibes + values + craziness + cuteness 🥰  
+      Thank you for being the most amazing dost anyone could ask for! ❤️
+    </p>
+
+    <div class="btns">
+      <a href="index.html">🏠 Home</a>
+      <a href="gallery.html">📸 Gallery</a>
+      <a href="message.html">💌 Message</a>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+  <script>
+    tsParticles.load("tsparticles", {
+      fullScreen: { enable: false },
+      background: {
+        color: "#fff0f6"
+      },
+      particles: {
+        number: { value: 40 },
+        color: { value: "#e91e63" },
+        shape: { type: "heart" },
+        opacity: { value: 0.8 },
+        size: { value: 12 },
+        move: {
+          enable: true,
+          speed: 2,
+          direction: "bottom",
+          outModes: { default: "out" }
+        }
+      }
+    });
+  </script>
+</body>
+</html>
